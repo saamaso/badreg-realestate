@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script>
+        function toggleNavbar(collapseID) {
+            document.getElementById(collapseID).classList.toggle("hidden");
+            document.getElementById(collapseID).classList.toggle("block");
+        }
+
+        function setImage(src) {
+            document.getElementById('largeImage').src = src;
+        }
+
+    </script>
+    <!-- <script src="carousel.js"></script> -->
+</head>
+
+<body class="bg-gray-950 font-sans leading-normal tracking-normal">
+    <div class="relative bg-black bg-opacity-50 w-full h-screen bg-cover bg-center"
+        style="background-image: url('bg-image.jpg');">
+        <nav class="py-3">
+            <div class="lg:flex items-center justify-between py-2 px-8 lg:px-12">
+                <div class="flex justify-between items-center">
+                    <div class="text-2xl font-mediu lg:text-3xl text-primary">
+                        <a href="#">Badreg Real Estate</a>
+                    </div>
+                    <div class="lg:hidden">
+                        <button class="text-gray-800 focus:outline-none focus:text-gray-600" type="button"
+                            onclick="toggleNavbar('mobile-menu')">
+                            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-5">
+                    <div class="border-b-4 border-transparent pb-2 hover:border-primary ">
+                        <a class="text-md uppercase text-gray-600 hover:text-primary font-bold" href="#">Home</a>
+                    </div>
+                    <div class="border-b-4 border-transparent pb-2 hover:border-primary ">
+                        <a class="text-md uppercase text-gray-600 hover:text-primary font-bold md:mx-4"
+                            href="#about-us">About
+                            Us</a>
+                    </div>
+                    <div class="border-b-4 border-transparent pb-2 hover:border-primary ">
+                        <a class="text-md uppercase text-gray-600 hover:text-primary font-bold"
+                            href="#properties">Properties</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#contact-us"
+                        class="px-5 py-2 text-lg text-primary font-semibold rounded-md border border-primary hover:text-white hover:bg-primary hover:border-transparent focus:outline-none">Contact
+                        us</a>
+                </div>
+            </div>
+            <div class="hidden lg:hidden" id="mobile-menu">
+                <a class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200" href="/">Home</a>
+                <a class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200" href="#about-us">About Us</a>
+                <a class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-200" href="#properties">Properties</a>
+                <a class="block py-2 px-4 text-sm  text-primary hover:bg-primary hover:text-white"
+                    href="#contact-us">Contact
+                    Us</a>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <section class="h-full">
+            <div class="flex items-center justify-center h-full w-full ">
+                <div class="text-center">
+                    <h1 class="text-white text-6xl font-bold">Welcome to Our Real Estate Company</h1>
+                    <p class="text-white text-xl mt-4">Find your perfect home with us</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main>
+
+        <!-- About Us Section -->
+        <section class="container mx-auto lg:max-w-5xl py-16">
+            <h2 id="about-us" class="text-4xl text-gray-100 font-bold text-center mb-8">About
+                Us</h2>
+            <div class="w-full h-[200px] md:h-[500px] grid grid-cols-5 grid-rows-4 gap-1 opacity-70">
+                <div class="bg-cover bg-center col-span-3 row-span-4 w-full h-full rounded-l-xl"
+                    style="background-image: url(image.png)"></div>
+                <div class="bg-cover bg-center col-span-2 row-span-2 w-full h-full rounded-tr-xl"
+                    style="background-image: url(building3.jpg)"></div>
+                <div class="bg-cover bg-center col-span-2 row-span-2 w-full h-full rounded-tr-xl"
+                    style="background-image: url(bl1.png)"></div>
+            </div>
+            <div class="text-md text-justify text-gray-200 font-light">
+                <p class=" mt-4 ">
+                    Welcome to Badreg Pty Ltd, a premier Real Estate Development company founded in 2022 by Mr. Mohammed
+                    Badreg. With a passion for property investment and a commitment to excellence, we specialize in
+                    creating
+                    high-quality residential buildings that enrich communities and enhance lifestyles.
+                    At Badreg Pty Ltd, we pride ourselves on our dedication to delivering exceptional projects that
+                    exceed
+                    expectations. With two exciting developments currently underway – Lots 192 and 193 Affinity Way in
+                    Willeton, and Lots 1, 2, and 3 on Pearl Parade in Scarborough – we're poised to make a lasting
+                    impact on
+                    the Western Australian real estate landscape.
+                </p>
+                <p class=" mt-4 ">
+                    Leading our team is Mr. Mohammed Badreg, a visionary entrepreneur of Ethiopian origin whose drive
+                    and
+                    expertise fuel our company's success. Under his leadership, we've assembled a talented and
+                    experienced
+                    team dedicated to ensuring every aspect of our projects runs smoothly and efficiently.
+                </p>
+
+                <p class=" mt-4 ">
+                    Meet our key team members:
+                <ul class=" mt-2 pl-5 ">
+                    <li>• Mr. Mohammed Badreg: As our esteemed Managing Director, Mr. Mohammed Badreg brings a wealth of
+                        experience and knowledge to the table. His vision and leadership have been instrumental in
+                        shaping our company's success.</li>
+                    <li>• Faridah Rahamat: With over 20 years of experience in the building industry, Faridah Rahamat
+                        serves as our esteemed Project Manager. She oversees the administration and day-to-day site work
+                        progress, collaborating closely with builders to ensure adherence to Western Australian
+                        regulations and standards.</li>
+                    <li>• Darren Liu: Hailing from Godwit Accounting & Business Solutions, Darren Liu is our trusted
+                        accountant, managing the financial aspects of our operations with precision and expertise.</li>
+                </ul>
+                <p class=" mt-4 ">
+                    Together, we're committed to building not just structures, but thriving communities where families
+                    can
+                    flourish and dreams can take root. With a focus on quality, innovation, and customer satisfaction,
+                    we're
+                    confident that our projects in Willeton and Scarborough will set a new standard for excellence in
+                    the
+                    real estate development industry.
+                </p>
+                <p class=" mt-4 ">
+                    Thank you for considering Badreg Pty Ltd for your next investment or residential purchase. We look
+                    forward to welcoming you home.
+                </p>
+
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Properties Section -->
+        <section class="container mx-auto lg:max-w-5xl  text-gray-200 font-light pb-16">
+            <h1 id="properties" class="text-4xl text-gray-100 font-bold text-center mb-8">Scarborough Area</h1>
+            <div class="container mx-auto p-5">
+                <div class="main-image mb-5">
+                    <!-- The large image display area; the src attribute will be updated by JavaScript -->
+                    <img id="largeImage" class="w-full max-w-3xl mx-auto h-auto" src="house1.png" alt="Large Display">
+                </div>
+                <div class="thumbnails grid grid-cols-4 gap-4 mb-4">
+                    <!-- First row: 4 thumbnails -->
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house1.png" alt="Thumbnail 1">
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house2.png" alt="Thumbnail 2">
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house3.png" alt="Thumbnail 3">
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house4.png" alt="Thumbnail 4">
+                </div>
+                <div class="thumbnails grid grid-cols-3 gap-4 justify-center mx-auto">
+                    <!-- Second row: 3 thumbnails, centered -->
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house5.png" alt="Thumbnail 5">
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house6.png" alt="Thumbnail 6">
+                    <img onclick="setImage(this.src)" class="w-full h-auto cursor-pointer hover:opacity-30"
+                        src="house8.png" alt="Thumbnail 7">
+                </div>
+            </div>
+            <p>
+                Scarborough is one of Perth's most iconic beachside suburbs and is located approximately 14 kilometers
+                from
+                the Perth CBD. It is surrounded by world-renowned beaches, sunny eateries and amenities making it the
+                ideal
+                location for those craving to be a hop away from exciting entertainment and recreation. With nearby
+                shops,
+                sunshine and a bustling nightlife, you can bring your coastal dreams to life living in a Nicheliving
+                Scarborough home.
+            </p>
+            <ul class="list-disc mt-2 ml-4 gap-2">
+                <li>
+                    <span class="font-bold mr-1">Quality Education:</span>
+                    Our Nicheliving Scarborough homes sit within the catchment area of a selection of high-quality
+                    education facilities. These include the highly respected Scarborough Primary School, St John's
+                    Primary School, St Mary's Anglican Girls' School, Hale School, and Churchlands Senior High School.
+
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Shop Till you Drop:</span>
+                    Our Nicheliving Scarborough homes are only a short drive away from one of Perth's best shopping
+                    destinations ensuring that all your necessities will be at your doorstep. Just 4 minutes from Coles
+                    and 7 minutes away from the newly refurbished Karrinyup Shopping Centre, you have a range of
+                    grocery, fashion, and lifestyle brands close to home.
+
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Healthy Lifestyle:</span>
+                    Get in touch with nature with glistening oceans and luscious reserves surrounding your new home.
+                    Enjoy a short 8 minute walk down to the stunning seaside which is home to Scarborough Beach Pools,
+                    Scarborough Beach Skate Park, Whale Playground, and a rock- climbing wall. As well as the kids, your
+                    fury friends will be happy with Peasholm and Trigg dog beaches both being within 6 minutes from
+                    home, so the whole family can enjoy a spacious coastal run.
+
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Brunch, & Dine: </span>
+
+                    Enjoy coffee dates and foreshore catch ups every day of the week with Scarborough's famous Esplanade
+                    strip just an incredible 3 minute walk away from home. You will be spoilt for choice with plenty of
+                    cafes and bars to choose from. Watch the stunning sunset over a cocktail at El Grotto and Peach Pit
+                    or play a game of bowling at The Lookout. If you prefer brunch, head to Lady Latte, Doric Street
+                    Cafe and Kitchen or The Wild Fig for coffee, all within 6 minutes from your new home.
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <section class="container mx-auto lg:max-w-5xl text-gray-300 font-light pb-16">
+            <h1 class="text-4xl text-gray-100 font-bold text-center mb-8">Nicheliving Willetton</h1>
+            <div class="thumbnails grid grid-cols-1 lg:grid-cols-2 gap-4 justify-center mx-auto">
+                <img src="nw-house1.png" class="w-full">
+                <img src="nw-house2.png" class="w-full">
+            </div>
+            <p>
+                Willetton is the perfect example of a classic Perth suburb, offering the
+                warmth and safety of a family friendly neighbourhood just 15 kilometres
+                from the vibrant hub that is our ever-evolving CBD.
+            </p>
+            <p>
+                The suburb began to flourish in the 1970s and has shown strong, steady
+                growth ever since, making it one of Australia’s most consistent suburbs
+                for property growth. Given the area’s maturity, you can expect cosy streets
+                lined with leafy trees and neighbours comprised of middle income earners
+                in established couples and family groups. It’s also a dynamic cultural pocket
+                known for its diversity, with 1 in 5 residents hailing from South East Asia.
+            </p>
+            <p>
+                It’s hardly surprising that this suburb is in high demand, especially given
+                the internationally recognised education facilities in the area, with Nicheliving
+                Willetton located within the highly-regarded Willetton Senior High School zone.
+                Just look at all that surrounds Willetton:
+            </p>
+            <ul class="list-disc mt-2 ml-4 gap-2">
+                <li>
+                    <span class="font-bold mr-1">Education: </span>
+                    The suburb is home to Willetton Senior High School, one of
+                    the state’s top secondary schools, as well as other prestigious,
+                    high performing primary and high schools. Nestled directly
+                    between Curtin and Murdoch universities, Willetton is also the
+                    ideal spot for any seeking tertiary education.
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Shopping: </span>
+                    Southlands Boulevard and Stockland Riverton sit right on your
+                    doorstep, or if you’re looking to splurge at major brands, you’ve
+                    got some of WA’s largest shopping malls in Carousel Shopping
+                    Centre and Garden City.
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Recreation & Lifestyle: </span>
+                    Willetton is within easy reach of some of Perth’s most iconic
+                    landmarks and venues. For those who lead an active lifestyle,
+                    there’s Riverton Leisureplex, Willetton Sports Club, Willetton
+                    Basketball Association as well as multiple lush golf courses
+                    and parks.
+
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Transport: </span>
+                    Connectivity is one of the greatest advantages of Willetton.
+                    Bordered by three major road networks in the Kwinana
+                    Freeway, Leach Highway and Roe Highway, and located next
+                    to several train station, travelling to any part of the metro area
+                    can be done with ease.
+                </li>
+                <li>
+                    <span class="font-bold mr-1">Health: </span>
+                    For a general check-up you have the Willetton Medical Centre
+                    and for more specialised healthcare there’s the state of the art
+                    Fiona Stanley Hospital.
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="container mx-auto lg:max-w-5xl">
+            <div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.2389401197406!2d115.85716740000001!3d-31.9544139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad5c37ff8b3%3A0x4b94175330c97610!2s108%20St%20Georges%20Terrace%2C%20Perth%20WA%206000%2C%20Australia!5e0!3m2!1sen!2set!4v1711288135617!5m2!1sen!2set"
+                    class="w-full h-[500px] md:rounded-xl" title="address"></iframe>
+            </div>
+        </section>
+
+        <div class=" text-gray-100 text-center">
+            <p class="">
+            <address>108 St. Georges Terrace, Level 25, Suit 07, Perth 6000, WA</address>
+            </p>
+        </div>
+
+
+
+    </main>
+
+
+    <footer class="bg-gray-950 text-gray-300">
+        <div class="border-t border-gray-300 mt-10 py-6 text-center text-sm">
+            © Copyright 2024 Semir Ahmed. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>
